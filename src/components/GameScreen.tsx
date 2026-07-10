@@ -210,13 +210,14 @@ return (
   <div className="relative w-full min-h-screen overflow-hidden">
 
     {/* Background */}
-    <div
-      className="absolute inset-0 bg-cover bg-center scale-110"
-      style={{
+   <div
+    className="absolute inset-0 bg-cover bg-center scale-110"
+    style={{
         backgroundImage: `url(${backgroundUrl})`,
         filter: "blur(5px) brightness(0.75) saturate(1)"
-      }}
-    />
+    }}
+>
+</div>
 
     {/* Overlay */}
     <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/45 to-black/65" />
@@ -227,9 +228,9 @@ return (
 <header
   className="relative z-10 w-full max-w-5xl mx-auto mt-4 px-4"
   id="game_header"
->
+
   
-          
+    <div>      
           {/* User Info & Brand */}
           <div className="flex items-center gap-3" id="header_user_details">
             <div className="h-10 w-10 rounded-xl bg-red-600/35 border border-red-500/50 flex items-center justify-center text-red-400">
@@ -266,7 +267,6 @@ return (
               {attemptsLeft}
             </div>
           </div>
-        </div>
       </header>
 
       {/* MID ARENA (Race track and character) */}
