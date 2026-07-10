@@ -1,0 +1,6 @@
+{
+  "name": "Lomba Balap Karung",
+  "description": "Mini game website bertema Hari Kemerdekaan Republik Indonesia 17 Agustus dengan judul Lomba Balap Karung.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
