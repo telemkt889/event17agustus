@@ -228,9 +228,8 @@ return (
 <header
   className="relative z-10 w-full max-w-5xl mx-auto mt-4 px-4"
   id="game_header"
-
-  
-    <div>      
+>
+     
           {/* User Info & Brand */}
           <div className="flex items-center gap-3" id="header_user_details">
             <div className="h-10 w-10 rounded-xl bg-red-600/35 border border-red-500/50 flex items-center justify-center text-red-400">
