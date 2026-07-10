@@ -8,8 +8,9 @@ import { UserSession, GameHistory } from './types';
 import LoginScreen from './components/LoginScreen';
 import GameScreen from './components/GameScreen';
 
-// Reference our beautiful festive background image path directly
-const backgroundUrl = '/src/assets/images/hari_kemerdekaan_bg_1783703298894.jpg';
+import backgroundImage from './assets/images/hari_kemerdekaan_bg_1783703298894.jpg';
+
+const backgroundUrl = backgroundImage;
 
 export default function App() {
   const [session, setSession] = useState<UserSession | null>(null);
