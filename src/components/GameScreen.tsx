@@ -206,23 +206,29 @@ export default function GameScreen({
   // Helper to get remaining attempts display
   const currentAttemptsDisplay = hasStartedAttemptsReduction ? attemptsLeft : attemptsLeft;
 
-  {/* Background */}
-<div
-    className="absolute inset-0 bg-cover bg-center scale-110"
-    style={{
+return (
+  <div className="relative w-full min-h-screen overflow-hidden">
+
+    {/* Background */}
+    <div
+      className="absolute inset-0 bg-cover bg-center scale-110"
+      style={{
         backgroundImage: `url(${backgroundUrl})`,
         filter: "blur(5px) brightness(0.75) saturate(1)"
-    }}
-></div>
+      }}
+    />
 
-{/* Overlay */}
-<div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/45 to-black/65"></div>
+    {/* Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/45 to-black/65" />
 
-{/* Panel Arena */}
-<div className="absolute inset-x-6 top-24 bottom-14 rounded-3xl bg-black/20 backdrop-blur-md border border-yellow-400/30 ring-1 ring-yellow-400/20 shadow-2xl"></div>
+    {/* Panel Arena */}
+    <div className="absolute inset-x-6 top-24 bottom-14 rounded-3xl bg-black/25 backdrop-blur-md border border-yellow-400/30 ring-1 ring-yellow-400/20 shadow-2xl" />
+
+<header
+  className="relative z-10 w-full max-w-5xl mx-auto mt-4 px-4"
+  id="game_header"
+>
   
-{/* Header */}
-<header className="relative z-10 ...">
           
           {/* User Info & Brand */}
           <div className="flex items-center gap-3" id="header_user_details">
