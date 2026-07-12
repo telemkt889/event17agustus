@@ -8,7 +8,7 @@ import { UserSession, GameHistory } from './types';
 import LoginScreen from './components/LoginScreen';
 import GameScreen from './components/GameScreen';
 
-import backgroundImage from './assets/images/hari_kemerdekaan_bg_1783703298894.jpg';
+import backgroundImage from '../hari_kemerdekaan_bg_1783703298894.jpg';
 
 const backgroundUrl = backgroundImage;
 
