@@ -422,66 +422,11 @@ return (
               style={{ left: '50px' }} // fallback start point
               id="sack_jumper_character"
             >
-              {/* Jumper Headband (Ikat Kepala Merah Putih) & Face */}
-              <div className="relative flex flex-col items-center">
-                {/* Straw Hat or Hair */}
-                <div className="w-10 h-10 rounded-full bg-amber-100 border border-amber-300 relative shadow flex items-center justify-center">
-                  
-                  {/* Eyes */}
-                  <div className="absolute top-3 left-2.5 flex gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-black flex items-center justify-center">
-                      <div className="w-0.5 h-0.5 rounded-full bg-white absolute top-0.5 left-0.5" />
-                    </div>
-                    <div className="w-1.5 h-1.5 rounded-full bg-black flex items-center justify-center">
-                      <div className="w-0.5 h-0.5 rounded-full bg-white absolute top-0.5 left-0.5" />
-                    </div>
-                  </div>
-
-                  {/* Mouth / Smile */}
-                  <div className={`absolute bottom-2.5 w-3.5 h-2 rounded-b-full border-b-2 border-amber-900 ${isJumping ? 'bg-red-500' : ''}`} />
-
-                  {/* Cheek Blush */}
-                  <div className="absolute top-4.5 left-1 w-1.5 h-1 rounded-full bg-rose-400/40" />
-                  <div className="absolute top-4.5 right-1 w-1.5 h-1 rounded-full bg-rose-400/40" />
-
-                  {/* Merah Putih Headband (Ikat Kepala) */}
-                  <div className="absolute top-1 left-0 right-0 h-2 bg-gradient-to-b from-red-600 to-white border-y border-red-700 flex justify-center items-center overflow-hidden">
-                    <span className="text-[5px] text-white font-extrabold uppercase scale-75">17 AGUSTUS</span>
-                  </div>
-                  
-                  {/* Headband tie knot on side */}
-                  <div className="absolute top-1 -right-1 w-1.5 h-1.5 bg-red-600 rotate-45 rounded-sm" />
-                </div>
-              </div>
-
-              {/* Gunny Sack (Karung Goni) body with custom decorations */}
-              <div className="relative -mt-1 w-14 h-14 bg-gradient-to-b from-amber-700 via-amber-800 to-amber-900 rounded-t-xl rounded-b-3xl border border-amber-950 flex flex-col justify-between items-center py-1.5 shadow-lg overflow-hidden">
-                {/* Sack wrinkles & bindings */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-amber-950/30" />
-                <div className="absolute top-3 left-0 right-0 h-0.5 bg-amber-950/20" />
-                <div className="absolute bottom-4 left-0 right-0 h-0.5 bg-amber-950/20" />
-
-                {/* Rope tying the sack at the waist */}
-                <div className="w-full h-1 bg-yellow-400/80 border-y border-yellow-600 relative z-10" />
-
-                {/* Indonesian Flag Emblem in the center of sack */}
-                <div className="w-7 h-4 border border-white/40 flex flex-col rounded overflow-hidden shadow-sm relative z-10 bg-white">
-                  <div className="h-1/2 bg-red-600 w-full" />
-                  <div className="h-1/2 bg-white w-full" />
-                </div>
-
-                {/* Text "RI" */}
-                <span className="text-[8px] font-mono font-bold text-amber-200 tracking-widest relative z-10 scale-90">KAPASITAS</span>
-              </div>
-
-              {/* Shadow Beneath Character (dynamic scaling based on jump height) */}
-              <div 
-                className="absolute -bottom-1.5 w-12 h-2.5 bg-black/60 rounded-full blur-[1px] transition-transform duration-300"
-                style={{
-                  transform: `scale(${isJumping ? 0.4 : 1})`,
-                  opacity: isJumping ? 0.3 : 0.8,
-                }}
-              />
+              <img
+  src="/anime.png"
+  alt="Pemain Anime"
+  className="w-24 h-24 object-contain"
+/>
             </motion.div>
           </div>
 
